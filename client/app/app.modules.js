@@ -4,7 +4,8 @@
   angular
   .module('SmashMeet', [
     'SmashMeet.dependencies',
-    'SmashMeet.home'
+    'SmashMeet.home',
+    'SmashMeet.auth'
   ]);
 
 })()

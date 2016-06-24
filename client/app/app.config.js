@@ -8,11 +8,20 @@
     function config ($stateProvider, $urlRouterProvider, $httpProvider) {
       $stateProvider
         .state('home', {
-          url: '/',
+          url: '/home',
           auth: false,
           templateUrl: '../pages/SmashMeet.home/templates/home.html',
           controller: 'HomeController as vm'
         })
+        .state('auth', {
+          url: '/',
+          auth: false,
+          templateUrl: '../pages/SmashMeet.auth/templates/auth.html',
+          controller: 'AuthController as vm'
+        })
+
+      $urlRouterProvider
+        .otherwise('/');
     }
 
 })()
