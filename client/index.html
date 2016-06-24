@@ -4,10 +4,18 @@
     <meta charset="utf-8">
     <title>SmashMeet</title>
   </head>
-  <body>
+  <body ng-app="SmashMeet">
     <h1>Smash Meet</h1>
+
+    <div ui-view></div>
 
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <!--App Settings-->
+    <script src="./app/app.dependencies.js"></script>
+    <script src="./app/app.modules.js"></script>
+    <script src="./app/app.config.js"></script>
+    <script src="./app/app.run.js"></script>
   </body>
 </html>
