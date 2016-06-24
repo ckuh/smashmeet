@@ -3,7 +3,8 @@
 
   angular
   .module('SmashMeet', [
-    'SmashMeet.dependencies'
+    'SmashMeet.dependencies',
+    'SmashMeet.home'
   ]);
 
 })()
