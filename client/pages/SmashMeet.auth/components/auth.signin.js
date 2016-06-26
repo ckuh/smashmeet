@@ -20,6 +20,11 @@
 
     function SignCtlr() {
       var vm = this;
+      vm.user = {};
+
+      vm.checkUserLog = function() {
+        
+      }
     }
 
 })();

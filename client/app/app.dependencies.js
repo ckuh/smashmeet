@@ -3,7 +3,11 @@
 
   angular
   .module('SmashMeet.dependencies', [
-    'ui.router'
+    'ui.router',
+    'ngAnimate',
+    'ngAria',
+    'ngMaterial',
+    'ngMessages',
   ]);
 
 })()

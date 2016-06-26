@@ -3,14 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>SmashMeet</title>
+
+    <link rel="stylesheet" href="lib/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./pages/SmashMeet.auth/styles/signin.css">
+
   </head>
   <body ng-app="SmashMeet">
     <h1>Smash Meet</h1>
 
     <div ui-view></div>
 
+    <!--Library-->
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="lib/angular-material/angular-material.min.js"></script>
+    <script src="lib/angular-animate/angular-animate.min.js"></script>
+    <script src="lib/angular-messages/angular-messages.min.js"></script>
+    <script src="lib/angular-aria/angular-aria.min.js"></script>
 
     <!--App Settings-->
     <script src="./app/app.dependencies.js"></script>
