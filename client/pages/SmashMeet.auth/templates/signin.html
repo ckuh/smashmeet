@@ -2,22 +2,17 @@
   <form name="signinForm" ng-submit="vm.checkUserLog()" class="md-primary">
     <div layout="column" layout-align="center end">
       <div layout="row" layout-align="center center">
-        <!--Username-->
-        <md-input-container class="signinForm" md-no-float>
+        <!-- Username -->
+        <md-input-container class="signinForm">
           <input name="user" ng-model="vm.user.name" type="text" placeholder="Username" required>
-          <div ng-messages="signinForm.user.$error">
-            <div ng-message="required">This is required!</div>
-          </div>
         </md-input-container>
 
         <!-- Password -->
-        <md-input-container class="signinForm" md-no-float>
+        <md-input-container class="signinForm">
           <input name="pass" ng-model="vm.user.password" type="password" placeholder="Password" required>
-          <div ng-messages="signinForm.pass.$error" role="alert">
-            <div ng-message="required">This is required!</div>
-          </div>
         </md-input-container>
 
+        <!-- Submit Button -->
         <md-button class="md-raised md-primary" type="submit">Log In</md-button>
       </div>
     </div>
